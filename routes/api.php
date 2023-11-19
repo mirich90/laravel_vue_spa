@@ -18,9 +18,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group(['namespace' => 'Post', 'prefix' => 'posts'], function () {
+Route::group(['namespace' => 'Post', 'prefix' => 'post'], function () {
     Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
+    Route::get('/{post}', 'ShowController');
     Route::patch('/{post}', 'UpdateController');
     Route::delete('/{post}', 'DeleteController');
 });

@@ -1,7 +1,7 @@
 <template lang="ru">
-    <div>
-        <router-link to="/posts">Posts</router-link>
-        <router-link to="/tags">Tags</router-link>
+    <div class="container">
+        <router-link :to="{name:'post.index'}">Posts</router-link>
+        <router-link :to="{name:'post.create'}">Create</router-link>
         <router-view></router-view>
     </div>
 </template>
