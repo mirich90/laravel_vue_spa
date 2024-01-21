@@ -1,19 +1,21 @@
-// Body
-$body-bg: #f8fafc;
-
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
-
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+:root {
+    // Colors
+    --bg: hsl(240, 11%, 96%);
+    --card-bg: white;
+    --text1: hsl(240, 3%, 12%);
+    --text2: hsl(240, 2%, 44%);
+    --gradient: linear-gradient(
+        270deg in oklab,
+        oklch(61% 0.21 258) 0%,
+        oklch(59% 0.27 303) 50%,
+        oklch(72% 0.28 332) 100%
+    );
+    // Typography
+    --font-family: "Nunito", sans-serif;
+    --font-size: 20px;
+    --title-size: 2.4rem;
+    --line-height: 1.6;
+    // container
+    --max-width: 1600px;
+    --max-width-small: 1100px;
+}

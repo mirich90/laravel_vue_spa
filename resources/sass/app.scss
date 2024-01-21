@@ -1,8 +1,97 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import "~bootstrap/scss/bootstrap";
+
+body {
+    background: hsl(240, 11%, 96%);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-family: var(--font-family);
+    color: var(--text1);
+}
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 4em auto;
+}
+.container-small {
+    width: 100%;
+    max-width: var(--max-width-small);
+    margin: 4em auto;
+}
+a {
+    color: var(--text1);
+    text-decoration: none;
+}
+label {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+}
+.input-wrapper {
+    margin-bottom: 1rem;
+}
+.btn-wrapper {
+    display: flex;
+}
+.btn {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: block;
+    inline-size: max-content;
+    white-space: nowrap;
+    padding-block: 0.75rem;
+    padding-inline: 1.25rem;
+    color: black;
+    margin-right: 1rem;
+    cursor: pointer;
+    position: relative;
+    isolation: isolate;
+    background: linear-gradient(hsl(0 0% 100%), hsl(0 0% 100%)) padding-box,
+        linear-gradient(
+                270deg in oklab,
+                oklch(61% 0.21 258) 0%,
+                oklch(59% 0.27 303) 50%,
+                oklch(72% 0.28 332) 100%
+            )
+            border-box;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0;
+        border-radius: 8rem;
+        background: var(--gradient);
+        mix-blend-mode: screen;
+    }
+
+    &:hover {
+        color: white;
+        &::before {
+            background: var(--gradient) padding-box, var(--gradient) border-box;
+            background-repeat: no-repeat;
+            background-size: contain;
+            mix-blend-mode: normal;
+            z-index: -1;
+        }
+    }
+}
+.btn-text {
+    border: none;
+    border-radius: 0;
+}

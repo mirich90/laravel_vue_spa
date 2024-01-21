@@ -1,9 +1,11 @@
 <template>
     <div>
-        index
-        <div v-for="post in posts">
-            <SinglePostComponent :post="post" :posts.sync="posts" />
+        <div v-if="posts.length">
+            <div v-for="post in posts">
+                <SinglePostComponent :post="post" :posts.sync="posts" />
+            </div>
         </div>
+        <div v-else>Постов пока нет</div>
     </div>
 </template>
 

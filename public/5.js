@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[0],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[5],{
 
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post/Create.vue?vue&type=script&lang=js":
 /*!*********************************************************************************************************************************************************************!*\
@@ -59,9 +59,9 @@ var render = function render() {
     _c = _vm._self._c;
   return _c("div", {
     staticClass: "form container-small"
-  }, [_c("h1", [_vm._v("Создать статью")]), _vm._v(" "), _c("div", {
+  }, [_c("div", {
     staticClass: "input-wrapper"
-  }, [_c("label", [_vm._v("Название")]), _vm._v(" "), _c("input", {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -85,7 +85,7 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "input-wrapper"
-  }, [_c("label", [_vm._v("Описание")]), _vm._v(" "), _c("input", {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -109,7 +109,7 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "input-wrapper"
-  }, [_c("label", [_vm._v("Текст")]), _vm._v(" "), _c("input", {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -133,7 +133,7 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "input-wrapper"
-  }, [_c("label", [_vm._v("Картинка")]), _vm._v(" "), _c("input", {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -157,10 +157,11 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "input-wrapper"
-  }, [_c("button", {
+  }, [_c("input", {
     staticClass: "btn",
     attrs: {
-      disabled: _vm.isDisabled
+      disabled: _vm.isDisabled,
+      value: "Создать"
     },
     on: {
       click: function click($event) {
@@ -168,7 +169,7 @@ var render = function render() {
         return _vm.storePost.apply(null, arguments);
       }
     }
-  }, [_vm._v("Создать")])])]);
+  })])]);
 };
 var staticRenderFns = [];
 render._withStripped = true;
@@ -188,7 +189,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.form[data-v-2ceba260] {\r\n    color: var(--text1);\r\n    background-color: white;\r\n    border-radius: 20px;\r\n    padding: 3rem;\n}\r\n", ""]);
+exports.push([module.i, "\n.input-wrapper[data-v-2ceba260] {\r\n    margin-bottom: 1rem;\n}\r\n", ""]);
 
 // exports
 

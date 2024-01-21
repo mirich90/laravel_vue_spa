@@ -1,38 +1,38 @@
 <template>
-    <div class="container mb-4">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">
-                        <h2 class="card-title">
-                            {{ post.title }}
-                        </h2>
+    <div class="container-small">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">
+                    {{ post.title }}
+                </h2>
 
-                        <div class="card-title">
-                            {{ post.description }}
-                        </div>
-                    </div>
-
-                    <div class="card-body">
-                        {{ post.text }}
-                    </div>
-
-                    <div class="card-footer bg-transparent">
-                        <router-link
-                            :to="{ name: 'post.edit', params: { id: post.id } }"
-                            class="btn btn-outline-success"
-                        >
-                            edit
-                        </router-link>
-                        <button
-                            @click.prevent="deletePost(post.id)"
-                            class="btn btn-outline-danger"
-                            value="create"
-                        >
-                            delete
-                        </button>
-                    </div>
+                <div class="card-image">
+                    <picture><img :src="post.img" :alt="post.title" /></picture>
                 </div>
+
+                <div class="card-description">
+                    {{ post.description }}
+                </div>
+            </div>
+
+            <div class="card-body">
+                {{ post.text }}
+            </div>
+
+            <div class="btn-wrapper">
+                <router-link
+                    :to="{ name: 'post.edit', params: { id: post.id } }"
+                    class="btn btn-outline-success"
+                >
+                    Редактировать
+                </router-link>
+                <button
+                    @click.prevent="deletePost(post.id)"
+                    class="btn btn-outline-danger"
+                    value="create"
+                >
+                    Удалить
+                </button>
             </div>
         </div>
     </div>
@@ -69,4 +69,25 @@ export default {
 };
 </script>
 
-<style lang=""></style>
+<style scoped>
+.card {
+    padding: 2rem 6rem;
+    color: var(--text1);
+    background-color: white;
+    border-radius: 20px;
+}
+.card .card-image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+.card-description {
+    background: #eee;
+    padding: 1em 2em;
+    margin: 1em 0;
+    font-weight: 500;
+    border-left: 0.5em solid oklch(59% 0.27 303);
+}
+.card-body {
+    margin: 3rem 0;
+}
+</style>

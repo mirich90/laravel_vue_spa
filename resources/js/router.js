@@ -7,6 +7,11 @@ export default new VueRouter({
     mode: "history",
     routes: [
         {
+            path: "/",
+            component: () => import("./components/Post/Index"),
+            name: "post.index",
+        },
+        {
             path: "/post",
             component: () => import("./components/Post/Index"),
             name: "post.index",

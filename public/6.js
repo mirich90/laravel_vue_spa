@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[6],{
 
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Post/Show.vue?vue&type=script&lang=js":
 /*!*******************************************************************************************************************************************************************!*\
@@ -116,7 +116,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.card[data-v-cd5ec15e] {\r\n    padding: 2rem 6rem;\r\n    color: var(--text1);\r\n    background-color: white;\r\n    border-radius: 20px;\n}\n.card .card-image img[data-v-cd5ec15e] {\r\n    width: 100%;\r\n    border-radius: 1rem;\n}\n.card-description[data-v-cd5ec15e] {\r\n    background: #eee;\r\n    padding: 1em 2em;\r\n    margin: 1em 0;\r\n    font-weight: 500;\r\n    border-left: 0.5em solid oklch(59% 0.27 303);\n}\n.card-body[data-v-cd5ec15e] {\r\n    margin: 3rem 0;\n}\r\n", ""]);
+exports.push([module.i, "\n.card .card-image img[data-v-cd5ec15e] {\r\n    width: 100%;\r\n    border-radius: 1rem;\n}\n.card-description[data-v-cd5ec15e] {\r\n    background: #eee;\r\n    padding: 1em 2em;\r\n    margin: 1em 0;\r\n    font-weight: 500;\r\n    border-left: 0.5em solid oklch(59% 0.27 303);\n}\n.card-body[data-v-cd5ec15e] {\r\n    margin: 3rem 0;\n}\r\n", ""]);
 
 // exports
 
